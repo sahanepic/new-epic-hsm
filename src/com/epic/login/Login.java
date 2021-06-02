@@ -5,7 +5,7 @@ import com.epic.utill.Print;
 import java.io.*;
 
 public class Login {
-    private static String data = "G:/Acadamic/Epic/new-epic-hsm/loginDetails/login.txt";
+    private static String data = "E:\\Intern\\software hsm\\new-epic-hsm-up\\loginDetails\\login.txt";
     private static int ln;
 
     public static void readFile() {
