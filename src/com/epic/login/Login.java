@@ -47,11 +47,11 @@ public class Login {
         try {
             String tmp;
             RandomAccessFile raf = new RandomAccessFile(data, "rw");
-            for (int i = 0; i < ln; i++) {
+            for (int i = 0; i < ln; i+=2) {
                 String user = raf.readLine().substring(10);
                 String pass = raf.readLine().substring(10);
                 System.out.println(user);
-                if (password.equals(pass)) {
+                if ((username.equals(user)) && (password.equals(pass))) {
                     Print.sysOutPrintln("Login success welcome " + username);
                     break;
                 } else {
