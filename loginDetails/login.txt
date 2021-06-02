@@ -1,1 +1,4 @@
-danidu,pass
+username: danidu
+password: pass
+username: sahan
+password: pass
