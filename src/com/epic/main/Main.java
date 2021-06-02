@@ -21,6 +21,7 @@ public class Main {
         Print.sysOutPrint("Enter your password: ");
         char[] pass = System.console().readPassword() ;
         System.out.println("Welcome "+new String(pass));
+        System.out.println("Welcome Sahan " );
 
     }
 
