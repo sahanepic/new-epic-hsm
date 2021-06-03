@@ -6,12 +6,12 @@ import java.io.*;
 import java.util.Properties;
 import java.util.Set;
 
-public class KeyStore {
+public class TemKeyStore {
 
     private final static String path = "E:\\Intern\\software hsm\\new-epic-hsm-up\\store\\key.properties";
     public static void main(String[] args) {
 
-        KeyStore kk =  KeyStore.getInstance();
+        TemKeyStore kk =  TemKeyStore.getInstance();
 
 
         Print.sysOutPrintln(kk.getAllPropertyNames().toString());
@@ -31,7 +31,7 @@ public class KeyStore {
 
     private final Properties configProp = new Properties();
 
-    private KeyStore()  {
+    private TemKeyStore()  {
         //Private constructor to restrict new instances
         InputStream in = null;
         try {
@@ -50,10 +50,10 @@ public class KeyStore {
     //Bill Pugh Solution for singleton pattern
     private static class LazyHolder
     {
-        private static final KeyStore INSTANCE = new KeyStore();
+        private static final TemKeyStore INSTANCE = new TemKeyStore();
     }
 
-    public static KeyStore getInstance()
+    public static TemKeyStore getInstance()
     {
         return LazyHolder.INSTANCE;
     }
