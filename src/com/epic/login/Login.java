@@ -8,7 +8,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Login {
-    private static String data = "E:\\Intern\\software hsm\\new-epic-hsm-up\\loginDetails\\login.txt";
+    private static String data = "G:\\Acadamic\\Epic\\new-epic-hsm\\loginDetails\\login.txt";
+    //    private static String data = "E:\\Intern\\software hsm\\new-epic-hsm-up\\loginDetails\\login.txt";
     private static int ln;
 
     public static void readFile() {
@@ -43,8 +44,8 @@ public class Login {
         }
 
     }
-    public static String getMd5(String input)
-    {
+
+    public static String getMd5(String input) {
         try {
 
             // Static getInstance method is called with hashing MD5
@@ -71,21 +72,24 @@ public class Login {
         }
     }
 
-    public static void authLogin(String username, String password) {
-
+    public static boolean authLogin(String username, String password) {
+        boolean ok = false;
         Login.countLines();
         try {
+
             String tmp;
             RandomAccessFile raf = new RandomAccessFile(data, "rw");
-            for (int i = 0; i < ln; i+=2) {
+            for (int i = 0; i < ln; i += 2) {
                 String user = raf.readLine().substring(10);
                 String pass = raf.readLine().substring(10);
 //                System.out.println(user);
                 if ((username.equals(user)) && (getMd5(password).equals(pass))) {
                     Print.sysOutPrintln("Login success welcome " + username);
+                    ok = true;
                     break;
-                } else if(i == (ln -2)) {
+                } else if (i == (ln - 2)) {
                     Print.sysOutPrintln("Invalid credintials");
+
                 }
             }
 
@@ -93,7 +97,7 @@ public class Login {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        return ok;
     }
 
 

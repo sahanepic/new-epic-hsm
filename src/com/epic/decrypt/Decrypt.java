@@ -62,7 +62,7 @@ public class Decrypt {
         return plaintxt;
     }
 
-    public String textSlotDecryption( int sloat , String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotDecryption( int sloat , String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String  plaintxt = null;
         byte[] k = new byte[128/8];
