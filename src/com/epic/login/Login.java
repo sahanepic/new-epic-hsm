@@ -3,6 +3,9 @@ package com.epic.login;
 import com.epic.utill.Print;
 
 import java.io.*;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class Login {
     private static String data = "G:/Acadamic/Epic/new-epic-hsm/loginDetails/login.txt";
@@ -40,6 +43,33 @@ public class Login {
         }
 
     }
+    public static String getMd5(String input)
+    {
+        try {
+
+            // Static getInstance method is called with hashing MD5
+            MessageDigest md = MessageDigest.getInstance("MD5");
+
+            // digest() method is called to calculate message digest
+            //  of an input digest() return array of byte
+            byte[] messageDigest = md.digest(input.getBytes());
+
+            // Convert byte array into signum representation
+            BigInteger no = new BigInteger(1, messageDigest);
+
+            // Convert message digest into hex value
+            String hashtext = no.toString(16);
+            while (hashtext.length() < 32) {
+                hashtext = "0" + hashtext;
+            }
+            return hashtext;
+        }
+
+        // For specifying wrong message digest algorithms
+        catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static void authLogin(String username, String password) {
 
@@ -50,11 +80,11 @@ public class Login {
             for (int i = 0; i < ln; i+=2) {
                 String user = raf.readLine().substring(10);
                 String pass = raf.readLine().substring(10);
-                System.out.println(user);
-                if ((username.equals(user)) && (password.equals(pass))) {
+//                System.out.println(user);
+                if ((username.equals(user)) && (getMd5(password).equals(pass))) {
                     Print.sysOutPrintln("Login success welcome " + username);
                     break;
-                } else {
+                } else if(i == (ln -2)) {
                     Print.sysOutPrintln("Invalid credintials");
                 }
             }

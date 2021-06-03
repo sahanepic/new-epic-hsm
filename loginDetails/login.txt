@@ -1,4 +1,6 @@
 username: danidu
-password: pass
+password: 1a1dc91c907325c69271ddf0c944bc72
 username: sahan
-password: pass
+password: 1a1dc91c907325c69271ddf0c944bc72
+username: kasun
+password: 1a1dc91c907325c69271ddf0c944bc72
