@@ -1,11 +1,12 @@
 package com.epic.main;
 
-//import com.epic.utill.Print;
+import com.epic.login.Login;
+import com.epic.utill.Print;
 
 import com.epic.utill.Print;
 
 import java.io.BufferedReader;
-import java.io.Console;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -16,14 +17,14 @@ public class Main {
 
         InputStreamReader  rr = new InputStreamReader(System.in);
         BufferedReader br =  new BufferedReader(rr);
-        Print.sysOutPrint("Enter your name: ");
-        String n=br.readLine();
+        Login.readFile();
+        Print.sysOutPrint("Enter your username: ");
+        String userName=br.readLine();
         Print.sysOutPrint("Enter your password: ");
-        char[] pass = System.console().readPassword() ;
-        System.out.println("Welcome "+new String(pass));
+        String password = br.readLine();
+        Login.authLogin(userName,password);
 
     }
-
 
 
 
