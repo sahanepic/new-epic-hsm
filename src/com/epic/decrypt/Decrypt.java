@@ -44,7 +44,7 @@ public class Decrypt {
     }
 
 
-    public String textAESDecryption(String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public String textDecryption(String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String  plaintxt = null;
         String s = "sahan";
@@ -64,33 +64,22 @@ public class Decrypt {
         return plaintxt;
     }
 
-    public String textSlotAESDecryption(int sloat , String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public String textSlotDecryption( int sloat , String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String  plaintxt = null;
         byte[] k = new byte[128/8];
         String  key = TemKeyStore.getInstance().getProperty("slot_"+sloat);
+        System.out.println("The Key is "+key);
         k = ISOUtil.hex2byte(key);
         SecretKeySpec encKey = new SecretKeySpec(k,"AES");
+
         Cipher cipher=Cipher.getInstance("AES/ECB/PKCS5Padding");
         cipher.init(Cipher.DECRYPT_MODE,encKey);
+
         byte[] ci = ISOUtil.hex2byte(cipertxt);
+
         byte[] cb =  cipher.doFinal(ci);
-        plaintxt =  new String(cb);
-        return plaintxt;
-    }
 
-
-    public String textSlotDESDecryption(int sloat , String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
-
-        String  plaintxt = null;
-        byte[] k = new byte[64/8];
-        String  key = TemKeyStore.getInstance().getProperty("slot_"+sloat);
-        k = ISOUtil.hex2byte(key);
-        SecretKeySpec encKey = new SecretKeySpec(k,"DES");
-        Cipher cipher=Cipher.getInstance("DES/ECB/PKCS5Padding");
-        cipher.init(Cipher.DECRYPT_MODE,encKey);
-        byte[] ci = ISOUtil.hex2byte(cipertxt);
-        byte[] cb =  cipher.doFinal(ci);
         plaintxt =  new String(cb);
         return plaintxt;
     }
