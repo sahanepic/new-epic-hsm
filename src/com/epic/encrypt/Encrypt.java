@@ -65,7 +65,7 @@ public class Encrypt {
     }
 
 
-    public String textSlotEncryption(String plaintxt ) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotEncryption(String plaintxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String  cipertxt = null;
         byte[] k = new byte[128/8];
