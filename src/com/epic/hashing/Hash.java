@@ -28,7 +28,7 @@ public class Hash {
 
 
 
-    public String textMD5Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textMD5Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("MD5");
@@ -38,7 +38,7 @@ public class Hash {
         return hash;
     }
 
-    public String textSHA1Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textSHA1Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("SHA1");
@@ -48,7 +48,7 @@ public class Hash {
         return hash;
     }
 
-    public String textSHA224Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textSHA224Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("SHA-224");
@@ -58,7 +58,7 @@ public class Hash {
         return hash;
     }
 
-    public String textSHA256Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textSHA256Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -68,7 +68,7 @@ public class Hash {
         return hash;
     }
 
-    public String textSHA384Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textSHA384Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("SHA-384");
@@ -79,7 +79,7 @@ public class Hash {
     }
 
 
-    public String textSHA512Hashing(String plaintxt) throws NoSuchAlgorithmException {
+    public static String textSHA512Hashing(String plaintxt) throws NoSuchAlgorithmException {
         String hash=null;
         byte[] b = plaintxt.getBytes();
         MessageDigest md = MessageDigest.getInstance("SHA-512");

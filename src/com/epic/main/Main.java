@@ -51,8 +51,10 @@ public class Main {
                 case "1":
                     Print.sysOutPrintln("Enter plain text: ");
                     String pText = br.readLine();
+                    Print.sysOutPrintln("Enter slot");
+                    int eslot = Integer.parseInt(br.readLine().trim());
                     try {
-                        String enValue = Encrypt.textSlotEncryption(pText);
+                        String enValue = Encrypt.textSlotAESEncryption(eslot, pText);
                         Print.sysOutPrint("The Enccrypted VAlue " + enValue );
                     }
                     catch (NoSuchAlgorithmException| NoSuchPaddingException |InvalidKeyException | BadPaddingException | IllegalBlockSizeException e) {
@@ -63,9 +65,10 @@ public class Main {
                     Print.sysOutPrintln("Enter ciper text: ");
                     String ciperText = br.readLine();
                     Print.sysOutPrintln("Enter slot");
-                    int slot = br.read();
+                    int slot = Integer.parseInt(br.readLine().trim());
                     try {
-                        Decrypt.textSlotDecryption(slot,ciperText);
+                        String deValue =Decrypt.textSlotAESDecryption(slot,ciperText);
+                        Print.sysOutPrint("The Enccrypted VAlue " + deValue );
                     }
                     catch (NoSuchAlgorithmException| NoSuchPaddingException |InvalidKeyException | BadPaddingException | IllegalBlockSizeException e) {
                         e.printStackTrace();

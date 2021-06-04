@@ -39,7 +39,7 @@ public class TemKeyStore {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("Reading all properties from the file");
+
         try {
             configProp.load(in);
         } catch (IOException e) {

@@ -22,9 +22,9 @@ public class Encrypt {
 
         try {
             Encrypt ee = new Encrypt();
-//            String val = ee.textSlotAESEncryption(0,"sahanbcs");
+            String val = ee.textSlotAESEncryption(0,"sahanbcs");
 //            String val = ee.textSlotEncryption("sahanbcs");
-            String val = ee.textSlotDESEncryption(8,"sahanbcs");
+//            String val = ee.textSlotDESEncryption(8,"sahanbcs");
 
             Print.sysOutPrint("The Enccrypted VAlue " + val );
         } catch (NoSuchAlgorithmException e) {
@@ -43,7 +43,7 @@ public class Encrypt {
 
 
 
-    public String textAESEncryption(String plaintxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textAESEncryption(String plaintxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String cipertxt = null;
         String s = "sahan";
@@ -64,12 +64,15 @@ public class Encrypt {
     }
 
 
-    public String textSlotAESEncryption(int sloat, String plaintxt ) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotAESEncryption(int sloat, String plaintxt ) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
+        System.out.println( "slot "  +sloat);
         String  cipertxt = null;
         byte[] k = new byte[128/8];
         String  key = TemKeyStore.getInstance().getProperty("slot_"+sloat);
+        System.out.println( " key  =" + key  +" bytes" );
         k = ISOUtil.hex2byte(key);
+
         SecretKeySpec encKey = new SecretKeySpec(k,"AES");
         Cipher cipher=Cipher.getInstance("AES/ECB/PKCS5Padding");
         cipher.init(Cipher.ENCRYPT_MODE,encKey);
@@ -79,7 +82,7 @@ public class Encrypt {
     }
 
 
-    public String textSlotDESEncryption(int sloat, String plaintxt ) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotDESEncryption(int sloat, String plaintxt ) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String  cipertxt = null;
         byte[] k = new byte[64/8];
