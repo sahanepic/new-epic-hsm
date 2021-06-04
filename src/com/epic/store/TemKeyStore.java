@@ -16,9 +16,9 @@ public class TemKeyStore {
 
         Print.sysOutPrintln(kk.getAllPropertyNames().toString());
 
-        for (int x =0 ; x< 8 ; x++){
+        for (int x =8 ; x< 16 ; x++){
             if(!kk.containsKey("slot_"+x)){
-                kk.setProperty("slot_"+x,"12A0BF00A0BF00"+x);
+                kk.setProperty("slot_"+x,"BF00012A0BF00A0"+x);
             }
         }
 
