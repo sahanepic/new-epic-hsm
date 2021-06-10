@@ -23,8 +23,8 @@ public class Encrypt {
         try {
             Encrypt ee = new Encrypt();
             String val = ee.textSlotAESEncryption(0, "sahanbcs");
-//            String val = ee.textSlotEncryption("sahanbcs");
-//            String val = ee.textSlotDESEncryption(8,"sahanbcs");
+//           String val = ee.textSlotEncryption("sahanbcs");
+    //        String val = ee.textSlotDESEncryption(0,"sahanbcs");
 
             Print.sysOutPrint("The Enccrypted VAlue " + val);
         } catch (NoSuchAlgorithmException e) {
