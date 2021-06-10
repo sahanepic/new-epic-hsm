@@ -1,9 +1,5 @@
 
-:
-java:S1128"Remove this duplicated import.(í¼«P8œÛ§Ûœ/
-W
-java:S1854"5Remove this useless assignment to local variable "n".(—À¿”øÿÿÿÿ8œÛ§Ûœ/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(äá•Á8œÛ§Ûœ/
-X	java:S125"<This block of commented-out lines of code should be removed.(âÁÛ8œÛ§Ûœ/
-H
-java:S1481"&Remove this unused "n" local variable.(—À¿”øÿÿÿÿ8œÛ§Ûœ/
+K
+java:S1121&".Extract the assignment out of this expression.(Íöùò8ËÏßŠ/
+]	java:S125"<This block of commented-out lines of code should be removed.(™ªËàøÿÿÿÿ8«øœƒ/
+]	java:S125)"<This block of commented-out lines of code should be removed.(™¹·›øÿÿÿÿ8ËÏßŠ/
