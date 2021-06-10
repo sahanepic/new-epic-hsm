@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="soft-hsm-code:jar">
+    <output-path>$PROJECT_DIR$/../../soft_hsm_code_jar</output-path>
+    <root id="archive" name="soft-hsm-code.jar">
+      <element id="module-output" name="soft-hsm-code" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jpos-2.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/bcprov-jdk16-1.46 .jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
