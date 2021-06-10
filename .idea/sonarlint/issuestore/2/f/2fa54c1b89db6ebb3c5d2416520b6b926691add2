@@ -1,0 +1,13 @@
+
+c
+java:S2095'"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(£ççØ
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—µªÔøÿÿÿÿ8İÄóƒ/
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(—µªÔøÿÿÿÿ8İÄóƒ/
+X	java:S125"<This block of commented-out lines of code should be removed.(£™á‘8Ş„óƒ/
+
+java:S1130T"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(‹¹†
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(—µªÔøÿÿÿÿ8İÄóƒ/
+x
+java:S4087X"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(­¸’–
