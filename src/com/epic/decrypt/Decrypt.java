@@ -63,11 +63,11 @@ public class Decrypt {
         return plaintxt;
     }
 
-    public static String textSlotAESDecryption(int sloat, String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotAESDecryption(int slot, String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String plaintxt = null;
         byte[] k = new byte[128 / 8];
-        String key = TemKeyStore.getInstance().getProperty("slot_" + sloat);
+        String key = TemKeyStore.getInstance().getProperty("slot_" + slot);
         k = ISOUtil.hex2byte(key);
         SecretKeySpec encKey = new SecretKeySpec(k, "AES");
         Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
@@ -79,11 +79,11 @@ public class Decrypt {
     }
 
 
-    public static String textSlotDESDecryption(int sloat, String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public static String textSlotDESDecryption(int slot, String cipertxt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
         String plaintxt = null;
         byte[] k = new byte[64 / 8];
-        String key = TemKeyStore.getInstance().getProperty("slot_" + sloat);
+        String key = TemKeyStore.getInstance().getProperty("slot_" + slot);
         k = ISOUtil.hex2byte(key);
         SecretKeySpec encKey = new SecretKeySpec(k, "DES");
         Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
