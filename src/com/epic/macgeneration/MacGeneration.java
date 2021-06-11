@@ -16,7 +16,7 @@ public class MacGeneration {
         Print.sysOutPrintln("Mac Generation");
         try {
 //            SecretKey ll = generateKey();
-            byte[] mac =  calculateHmac256(0,"sahan");
+            byte[] mac =  calculateHmac160(0,"danidu");
 
             String smac = ISOUtil.byte2hex(mac);
             Print.sysOutPrintln("S MAc " +  smac);

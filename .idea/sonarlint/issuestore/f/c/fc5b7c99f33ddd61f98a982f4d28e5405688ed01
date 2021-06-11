@@ -1,32 +1,32 @@
 
+V	java:S125U"<This block of commented-out lines of code should be removed.(‰ü¾üÿÿÿÿ
+Z
+java:S2147*"DCombine this catch with the one at line 40, which has the same body.(Ãôş•
+T
+java:S1854">Remove this useless assignment to local variable "fileReader".(™˜óÎ
 C
 java:S1481P"(Remove this unused "tmp" local variable.(Ñ ’‘øÿÿÿÿ
+`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(ùÃñ 
+d
+java:S2095Q"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
+7
+java:S1643@"Use a StringBuilder instead.(¬Ô‹úÿÿÿÿ
+c
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(İ—ªİşÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(…éÖüÿÿÿÿ8¯‡¤Ÿ/
+E
+java:S1481"/Remove this unused "fileReader" local variable.(™˜óÎ
 <
 java:S1481$"&Remove this unused "i" local variable.(Ûó£
 J
 java:S1481"/Remove this unused "fileWriter" local variable.(İ—ªİşÿÿÿÿ
-c
-java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(İ—ªİşÿÿÿÿ
 P
 java:S1118
 ":Add a private constructor to hide the implicit public one.(Ä½„‚
-E
-java:S1481"/Remove this unused "fileReader" local variable.(™˜óÎ
-d
-java:S2095Q"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
 d
 java:S2095#"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
-7
-java:S1643@"Use a StringBuilder instead.(¬Ô‹úÿÿÿÿ
 ^
 java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(™˜óÎ
-`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-T
-java:S1854">Remove this useless assignment to local variable "fileReader".(™˜óÎ
-N	java:S106'"9Replace this use of System.out or System.err by a logger.(ùÃñ 
-V	java:S125U"<This block of commented-out lines of code should be removed.(‰ü¾üÿÿÿÿ
-Z
-java:S2147*"DCombine this catch with the one at line 40, which has the same body.(Ãôş•
 Y
 java:S1854">Remove this useless assignment to local variable "fileWriter".(İ—ªİşÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(…éÖüÿÿÿÿ8°Ş”„/
