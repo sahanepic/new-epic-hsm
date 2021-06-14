@@ -33,7 +33,7 @@ public class ClientServerThread implements Runnable {
         try {
             req=is.readLine() ;
 
-            res = InputProcess.handleRequewest(req);
+            res = InputProcess.handleRequest(req);
             os.println(res);
             os.flush();
             System.out.println("Request from Client  :  "+ req);

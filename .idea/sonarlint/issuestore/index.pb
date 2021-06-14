@@ -17,3 +17,7 @@ N
 src/com/epic/hashing/Hash.java,0\5\05b9d094dd9f75369cc1234b9bbf4f5b1fbc7ccc
 S
 #src/com/epic/utill/MessageFlow.java,c\a\cade53a145a8cbee01a25de24167f1fdc9d85f68
+a
+1src/com/epic/macverification/MacVerification.java,9\c\9caf0782c8d555b22507b0bd500d36f25446dcf5
+]
+-src/com/epic/macgeneration/MacGeneration.java,4\3\430f7d022fd2ef2d63c3e8ff65015ac4feb381f6

@@ -1,13 +1,13 @@
 
-x
-java:S4087X"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(­¸’–
-c
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(—µªÔøÿÿÿÿ8İÄóƒ/
-g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(—µªÔøÿÿÿÿ8À‹‡¤Ÿ/
-
-java:S1130T"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(‹¹†
+X	java:S125"<This block of commented-out lines of code should be removed.(£™á‘8ÊÁ‡ÊŸ/
 c
 java:S2095'"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(£ççØ
+
+java:S1130T"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(‹¹†
+x
+java:S4087X"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(­¸’–
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(—µªÔøÿÿÿÿ8’‡ÊŸ/
+c
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(—µªÔøÿÿÿÿ8’‡ÊŸ/
 {	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—µªÔøÿÿÿÿ8À‹‡¤Ÿ/
-X	java:S125"<This block of commented-out lines of code should be removed.(£™á‘8À‹‡¤Ÿ/
