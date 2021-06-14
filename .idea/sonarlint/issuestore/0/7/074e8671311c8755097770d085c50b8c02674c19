@@ -1,25 +1,25 @@
 
->
-java:S55428"#Use secure mode and padding scheme.(Ü øùÿÿÿÿ
-_
-java:S2147""DCombine this catch with the one at line 30, which has the same body.(“³Ûİüÿÿÿÿ
-Z
-java:S2147$"DCombine this catch with the one at line 30, which has the same body.(çŞ¡Ğ
-Z
-java:S2147 "DCombine this catch with the one at line 30, which has the same body.(Ë‡…¨
->
-java:S5542K"#Use secure mode and padding scheme.(Ü øùÿÿÿÿ
-P
-java:S1854F"5Remove this useless assignment to local variable "k".(Å—éìúÿÿÿÿ
-P	java:S125"<This block of commented-out lines of code should be removed.(q
-_
-java:S2147&"DCombine this catch with the one at line 30, which has the same body.(©Ë¸Ãşÿÿÿÿ
-W
-java:S2209"5Change this instance-reference to a static reference.(„ø­Úúÿÿÿÿ8×ÔÂŞ/
-U	java:S106D"9Replace this use of System.out or System.err by a logger.(æÖÛ†8×ÔÂŞ/
-W
-java:S1854V"5Remove this useless assignment to local variable "k".(ê—ğÓıÿÿÿÿ8×ÔÂŞ/
-E
-java:S5542Z"#Use secure mode and padding scheme.(£°Âşÿÿÿÿ8×ÔÂŞ/
 @
-java:S5547Z"Use a strong cipher algorithm.(£°Âşÿÿÿÿ8×ÔÂŞ/
+java:S5547Z"Use a strong cipher algorithm.(£°Âşÿÿÿÿ8€Œ‡¤Ÿ/
+W	java:S125"<This block of commented-out lines of code should be removed.(q8ÿ§÷¬Ÿ/
+U	java:S106D"9Replace this use of System.out or System.err by a logger.(úŞ™¯8ĞÇ€ÊŸ/
+E
+java:S55428"#Use secure mode and padding scheme.(Ü øùÿÿÿÿ8€Œ‡¤Ÿ/
+f
+java:S2147""DCombine this catch with the one at line 30, which has the same body.(“³Ûİüÿÿÿÿ8€Œ‡¤Ÿ/
+a
+java:S2147 "DCombine this catch with the one at line 30, which has the same body.(Ë‡…¨8€Œ‡¤Ÿ/
+E
+java:S5542Z"#Use secure mode and padding scheme.(£°Âşÿÿÿÿ8€Œ‡¤Ÿ/
+a
+java:S2147$"DCombine this catch with the one at line 30, which has the same body.(çŞ¡Ğ8€Œ‡¤Ÿ/
+E
+java:S5542K"#Use secure mode and padding scheme.(Ü øùÿÿÿÿ8ĞÇ€ÊŸ/
+W
+java:S1854F"5Remove this useless assignment to local variable "k".(Å—éìúÿÿÿÿ8ĞÇ€ÊŸ/
+W
+java:S2209"5Change this instance-reference to a static reference.(„ø­Úúÿÿÿÿ8·Œù¨Ÿ/
+W
+java:S1854V"5Remove this useless assignment to local variable "k".(ê—ğÓıÿÿÿÿ8ĞÇ€ÊŸ/
+f
+java:S2147&"DCombine this catch with the one at line 30, which has the same body.(©Ë¸Ãşÿÿÿÿ8€Œ‡¤Ÿ/

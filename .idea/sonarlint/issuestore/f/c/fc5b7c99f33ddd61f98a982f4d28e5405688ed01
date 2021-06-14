@@ -1,32 +1,32 @@
 
-C
-java:S1481P"(Remove this unused "tmp" local variable.(Ñ ’‘øÿÿÿÿ
-<
-java:S1481$"&Remove this unused "i" local variable.(Ûó£
+`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(ùÃñ 
 J
 java:S1481"/Remove this unused "fileWriter" local variable.(Ý—ªÝþÿÿÿÿ
 c
 java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ý—ªÝþÿÿÿÿ
+T
+java:S1854">Remove this useless assignment to local variable "fileReader".(™˜óÎ
+V	java:S125U"<This block of commented-out lines of code should be removed.(‰ü¾üÿÿÿÿ
 P
 java:S1118
 ":Add a private constructor to hide the implicit public one.(Ä½„‚
-E
-java:S1481"/Remove this unused "fileReader" local variable.(™˜óÎ
-d
-java:S2095Q"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
-d
-java:S2095#"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
-7
-java:S1643@"Use a StringBuilder instead.(¬Ô‹úÿÿÿÿ
-^
-java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(™˜óÎ
-`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-T
-java:S1854">Remove this useless assignment to local variable "fileReader".(™˜óÎ
-N	java:S106'"9Replace this use of System.out or System.err by a logger.(ùÃñ 
-V	java:S125U"<This block of commented-out lines of code should be removed.(‰ü¾üÿÿÿÿ
 Z
 java:S2147*"DCombine this catch with the one at line 40, which has the same body.(Ãôþ•
+d
+java:S2095Q"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
+C
+java:S1481P"(Remove this unused "tmp" local variable.(Ñ ’‘øÿÿÿÿ
 Y
 java:S1854">Remove this useless assignment to local variable "fileWriter".(Ý—ªÝþÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(…éÖüÿÿÿÿ8°Þ”„/
+d
+java:S2095#"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Ì¯ø¬
+E
+java:S1481"/Remove this unused "fileReader" local variable.(™˜óÎ
+7
+java:S1643@"Use a StringBuilder instead.(¬Ô‹úÿÿÿÿ
+<
+java:S1481$"&Remove this unused "i" local variable.(Ûó£
+]	java:S125"<This block of commented-out lines of code should be removed.(…éÖüÿÿÿÿ8¯‡¤Ÿ/
+^
+java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(™˜óÎ

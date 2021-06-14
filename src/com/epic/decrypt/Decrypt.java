@@ -23,9 +23,9 @@ public class Decrypt {
             Decrypt ee = new Decrypt();
 //            String val = ee.textDecryption("Ir0nDAQA1xBfLblWDi8PJg==");
 //            String val = ee.textSlotDecryption("hzotcsTSm6E6oXsoyPHWhA==");
-            String val = ee.textSlotAESDecryption(0, "3ae84e5d1cdd1f1e62705c3e1a073ce2");
+//            String val = ee.textSlotAESDecryption(0, "3ae84e5d1cdd1f1e62705c3e1a073ce2");
 
-//            String val = ee.textSlotDESDecryption( 8 ,"40f5bad55e39e3806c99f1f5d0187b13");
+            String val = ee.textSlotDESDecryption( 8 ,"40f5bad55e39e3806c99f1f5d0187b13");
             Print.sysOutPrint("The Decrypted VAlue  " + val);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();

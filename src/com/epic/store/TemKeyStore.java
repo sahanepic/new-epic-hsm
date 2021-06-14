@@ -8,8 +8,8 @@ import java.util.Set;
 
 public class TemKeyStore {
 
-    private final static String path = "E:\\Intern\\software hsm\\new-epic-hsm-up\\store\\key.properties";
-//    private final static String path = "G:\\Acadamic\\Epic\\new-epic-hsm\\store\\key.properties";
+   // private final static String path = "E:\\Intern\\software hsm\\new-epic-hsm-up\\store\\key.properties";
+    private final static String path = "G:\\Acadamic\\Epic\\new-epic-hsm\\store\\key.properties";
     public static void main(String[] args) {
 
         TemKeyStore kk =  TemKeyStore.getInstance();
