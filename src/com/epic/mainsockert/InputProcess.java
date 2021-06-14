@@ -25,8 +25,10 @@ public class InputProcess {
                 switch (alg){
                     case "00":
                         slot = Integer.valueOf( req.substring(4,6)) ;
-                        plaintext =  req.substring(6,req.length()-1);
+                        System.out.println("Slot " + slot);
+                        plaintext =  req.substring(6);
                         try {
+                            System.out.println("Inputs " + plaintext + " " + slot);
                             res = "PV00" + Encrypt.textSlotDESEncryption(slot, plaintext) ;
                         } catch (NoSuchAlgorithmException e) {
                             e.printStackTrace();
@@ -42,7 +44,7 @@ public class InputProcess {
                         break;
                     case "01":
                         slot = Integer.valueOf( req.substring(4,6)) ;
-                        plaintext =  req.substring(6,req.length()-1);
+                        plaintext =  req.substring(6,req.length());
                         System.out.println("plaintext" + plaintext);
                         try {
                             res = "PV01" + Decrypt.textSlotDESDecryption(slot, plaintext) ;
