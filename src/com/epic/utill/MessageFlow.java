@@ -110,7 +110,7 @@ public class MessageFlow {
                 e.printStackTrace();
             }
         }
-            else if (choice.equals("4")) {
+            else if (choice.equals("3")) {
                 try {
                     mac = MacGeneration.calculateHmac256(slot,plainText);
                     Print.sysOutPrintln(MACMSG + ISOUtil.byte2hex(mac));
@@ -118,7 +118,7 @@ public class MessageFlow {
                     e.printStackTrace();
                 }
         }
-        else if (choice.equals("5")) {
+        else if (choice.equals("4da")) {
             try {
                 mac = MacGeneration.calculateHmac512(slot,plainText);
                 Print.sysOutPrintln(MACMSG + ISOUtil.byte2hex(mac));
